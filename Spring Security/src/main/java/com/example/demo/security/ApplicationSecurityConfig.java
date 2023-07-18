@@ -51,7 +51,7 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
                 .password(passwordEncoder.encode("passwordadmin"))
                 .roles(ApplicationUserRole.ADMIN.name())
                 .build();
-1:15 am
+        
         return new InMemoryUserDetailsManager(
                 nodoUser,
                 nikaUser
